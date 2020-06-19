@@ -10,9 +10,9 @@ function removePromotions() {
 window.addEventListener('scroll', removePromotions);
 window.addEventListener('click', function () {
   removePromotions();
-  for(int i=100; i<5000; i += 100)setTimeout(removePromotions, i);
+  for(i=100; i<5000; i += 100)setTimeout(removePromotions, i);
 });
 
 // Make sure the promotions are removed on the first page load.
 // Will remove every 100ms for up to the first 10 seconds.
-for(int i=100; i<10000; i += 100)setTimeout(removePromotions, i);
+for(i=100; i<10000; i += 100)setTimeout(removePromotions, i);
