@@ -3,6 +3,7 @@ function removePromotions() {
   $('div[aria-label*="Timeline: Trending now"]>div>div:has(svg~span>span:contains("Promoted"))').css('display', 'none');
   $('aside[aria-label*="Who to follow"]>div>div:has(svg~div>span:contains("Promoted"))').css('display', 'none');
   $('div[aria-label*="Timeline: Explore"]>div>div>div:has(div>div>div>div>div>svg~span>span:contains("Promoted by"))').css('display', 'none');
+  $('a[href*="/i/events/"]').css('display', 'none');
 }
 
 window.addEventListener('scroll', removePromotions);
